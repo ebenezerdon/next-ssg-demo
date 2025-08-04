@@ -95,13 +95,28 @@ const nextConfig = {
 
 ## Deployment
 
-The generated static files in the `out/` directory can be deployed to:
+This project uses static export (`output: 'export'`) and generates pure HTML/CSS/JS files, making it compatible with any static hosting service.
+
+### Appwrite Sites
+
+This project is ready to deploy on Appwrite Sites:
+
+1. **Push your code** to a Git repository (GitHub, GitLab, etc.)
+2. **Connect to Appwrite Sites** and select your repository
+3. **Build settings** (auto-detected):
+   - **Build command**: `npm run build`
+   - **Output directory**: `out`
+4. **Deploy** - Appwrite will automatically build and deploy your site
+
+### Other Static Hosting Services
+
+The generated static files in the `out/` directory can also be deployed to:
 
 - **Vercel**: Automatic deployment with Git integration
 - **Netlify**: Drag and drop the `out/` folder
 - **GitHub Pages**: Push the `out/` folder to a gh-pages branch
 - **AWS S3**: Upload the `out/` folder to an S3 bucket
-- **Any static hosting service**
+- **Cloudflare Pages**: Connect your Git repository
 
 ## Learn More
 
