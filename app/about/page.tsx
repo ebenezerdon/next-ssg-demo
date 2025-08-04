@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 export default function About() {
   return (
     <div className="container mx-auto px-4 py-16">
@@ -14,8 +15,8 @@ export default function About() {
             <p className="text-gray-600 mb-4">
               Static Site Generation is a method of building websites where all
               pages are pre-rendered at build time. This results in faster
-              loading times, better SEO, and improved security since
-              there&apos;s no server-side processing required at runtime.
+              loading times, better SEO, and improved security since there&#39;s
+              no server-side processing required at runtime.
             </p>
           </div>
 
