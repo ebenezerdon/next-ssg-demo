@@ -108,6 +108,27 @@ This project is ready to deploy on Appwrite Sites:
    - **Output directory**: `out`
 4. **Deploy** - Appwrite will automatically build and deploy your site
 
+#### Troubleshooting "Page not found" issues:
+
+If you see "Page not found" after deployment, try these fixes:
+
+1. **Update next.config.js** (already configured):
+
+   ```javascript
+   const nextConfig = {
+     output: 'export',
+     trailingSlash: false,
+     skipTrailingSlashRedirect: true,
+     images: { unoptimized: true },
+   }
+   ```
+
+2. **Clean rebuild**: Run `npm run clean && npm run build` locally to ensure clean output
+
+3. **Check the output**: Verify `out/index.html` exists and contains your content
+
+4. **Redeploy**: Push the updated configuration and redeploy on Appwrite Sites
+
 ### Other Static Hosting Services
 
 The generated static files in the `out/` directory can also be deployed to:
