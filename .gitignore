@@ -33,5 +33,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# test files
+build-test.js
+test-build.sh
 .history
 .vscode/tasks.json
